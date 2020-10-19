@@ -6,4 +6,18 @@ Otto -> True
 Peter -> False
 """
 
-# TODO: create solution
+def isPalindrome(word):
+    lowerCasedWord = word.lower()
+
+    # return lowerCasedWord[::-1] == lowerCasedWord
+
+    length = len(lowerCasedWord)
+    for i in range(0, length):
+        if lowerCasedWord[i] != lowerCasedWord[length - 1 - i]:
+            return False
+
+    return True
+
+
+print(isPalindrome("Otto"))
+print(isPalindrome("Peter"))
