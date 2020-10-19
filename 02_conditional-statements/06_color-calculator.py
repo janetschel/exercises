@@ -36,6 +36,8 @@ elif not red and yellow and not blue:
     result = "gelb"
 elif not red and not yellow and blue:
     result = "blue"
+elif not red and not yellow and not blue:
+    result = "schwarz"
 else:
     result = "Fehler"
 
