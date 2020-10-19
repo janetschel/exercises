@@ -8,4 +8,14 @@ gesuchtes Element 3 -> True
 gesuchtes Element 5 -> False
 """
 
-# TODO: create solution
+def isElementPresentInList(listInput, element):
+    for currentElement in listInput:
+        if currentElement == element:
+            return True
+
+    return False
+
+
+listInput = [1, 4, 6, 14, 0]
+
+print(isElementPresentInList(listInput, 4))
