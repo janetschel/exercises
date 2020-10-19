@@ -12,5 +12,5 @@ radius = float(radiusInput)
 circumference = 2 * PI * radius
 surfaceArea = PI * radius ** 2
 
-print("Umfang: " + str(circumference))
-print("Flächeninhalt: " + str(surfaceArea))
+print(f"Umfang: {circumference}")
+print(f"Flächeninhalt: {surfaceArea}")

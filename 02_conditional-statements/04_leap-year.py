@@ -28,6 +28,6 @@ if year % 400 == 0:
 # isLeapYear = year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
 
 if isLeapYear:
-    print(yearInput + " ist ein Schaltjahr.")
+    print(f"{yearInput} ist ein Schaltjahr.")
 else:
-    print(yearInput + " ist kein Schaltjahr.")
+    print(f"{yearInput} ist kein Schaltjahr.")

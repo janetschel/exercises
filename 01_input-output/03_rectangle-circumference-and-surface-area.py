@@ -12,5 +12,5 @@ height = float(heightInput)
 circumference = width * 2 + height * 2
 surfaceArea = width * height
 
-print("Umfang: " + str(circumference))
-print("Flächeninhalt: " + str(surfaceArea))
+print(f"Umfang: {circumference}")
+print(f"Flächeninhalt: {surfaceArea}")

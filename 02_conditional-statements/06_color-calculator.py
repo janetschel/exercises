@@ -39,4 +39,4 @@ elif not red and not yellow and blue:
 else:
     result = "Fehler"
 
-print("Die resultierende Farbe ist: " + result)
+print(f"Die resultierende Farbe ist: {result}")

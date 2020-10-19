@@ -29,4 +29,4 @@ elif operatorInput == "*":
 elif operatorInput == "/":
     result = a / b
 
-print("Ergebnis: " + str(result))
+print(f"Ergebnis: {result}")

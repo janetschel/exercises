@@ -13,4 +13,4 @@ result: int = 0
 for n in range(1, number + 1):
     result += n
 
-print("Die Summe aller Zahlen von 1 bis " + userInput + " ist: " + str(result))
+print(f"Die Summe aller Zahlen von 1 bis {userInput} ist: {result}")

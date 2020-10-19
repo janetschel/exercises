@@ -20,10 +20,10 @@ Beispiel:
 
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
-        print(str(i) + ": FizzBuzz")
+        print(f"{i}: FizzBuzz")
     elif i % 3 == 0:
-        print(str(i) + ": Fizz")
+        print(f"{i}: Fizz")
     elif i % 5 == 0:
-        print(str(i) + ": Buzz")
+        print(f"{i}: Buzz")
     else:
-        print(str(i) + ":")
+        print(f"{i}:")
