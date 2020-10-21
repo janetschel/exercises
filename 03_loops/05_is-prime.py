@@ -10,7 +10,7 @@ userInput = input("Zahl: ")
 
 number: int = int(userInput)
 
-isPrime: bool = True
+isPrime: bool = number > 1
 
 for i in range(2, number):
     if number % i == 0:
