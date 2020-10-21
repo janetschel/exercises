@@ -10,11 +10,14 @@ userInput = input("Zahl: ")
 
 number: int = int(userInput)
 
-isPrime = True
+isPrime: bool = True
 
 for i in range(2, number):
     if number % i == 0:
         isPrime = False
         break
 
-print("Primzahl" if isPrime else "keine Primzahl")
+if isPrime:
+    print("Primzahl")
+else:
+    print("Keine Primzahl")
