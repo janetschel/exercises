@@ -11,22 +11,19 @@ Versuche ausgegeben werden.
 
 import random
 
-replay = "y"
+print("In wie vielen Versuchen kannst du eine Zahl zwischen 1 und 100 erraten?")
 
-print("In wievielen Versuchen kannst du eine Zahl zwischen 1 und 100 erraten?")
+randomNumber: int = random.randint(1, 100)
+guessedNumber: int = -1
+numberOfGuesses: int = 0
 
-while replay == "y":
-    randomNumber = random.randint(1, 100)
-    numberOfGuesses = 0
+while guessedNumber != randomNumber:
+    guessedNumber = int(input("An welche Zahl denke ich? "))
+    numberOfGuesses += 1
 
-    while True: #Use do-while if possible
-        guessedNumber = int(input("An welche Zahl denke ich? "))
-        numberOfGuesses += 1
-
-        if guessedNumber == randomNumber:
-            print(f"Korrekt! Du hast {numberOfGuesses} Versuche gebraucht.")
-            break
-        else:
-            print(f"Meine Zahl ist {'größer' if guessedNumber < randomNumber else 'kleiner'} als {guessedNumber}.")
-
-    replay = input("Möchtest du nochmal spielen? (y/n) ")
+    if guessedNumber < randomNumber:
+        print(f"Meine Zahl ist größer als {guessedNumber}")
+    elif guessedNumber > randomNumber:
+        print(f"Meine Zahl ist kleiner als {guessedNumber}")
+    else:
+        print(f"Korrekt! Du hast {numberOfGuesses} Versuche gebraucht.")
