@@ -5,6 +5,7 @@ Beispiel:
 [1, 4, 14, 3, 0] -> 0 3 14 4 1
 """
 
+
 def reverseList(listInput):
     for element in listInput[::-1]:
         print(element)

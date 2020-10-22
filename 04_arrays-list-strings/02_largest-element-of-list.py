@@ -5,6 +5,7 @@ Beispiel:
 [1, 4, 14, 3, 0] -> 14
 """
 
+
 def findBiggestElementInList(listInput):
     # return max(listInput)
 

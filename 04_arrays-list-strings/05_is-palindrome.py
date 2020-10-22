@@ -6,6 +6,7 @@ Otto -> True
 Peter -> False
 """
 
+
 def isPalindrome(word):
     lowerCasedWord = word.lower()
 
