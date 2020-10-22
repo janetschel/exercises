@@ -16,5 +16,5 @@ for character in userInput:
     elif character.isalpha() and character != " ":
         numberOfCharacters += 1
 
-print("Zeichen: " + str(numberOfCharacters))
-print("Zahlen: " + str(numberOfDigits))
+print(f"Zeichen: {numberOfCharacters}")
+print(f"Zahlen: {numberOfDigits}")
