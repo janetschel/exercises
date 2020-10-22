@@ -6,7 +6,7 @@ Hinweis: Eine Zahl ist nur dann eine Primzahl, wenn sie nur durch 1 oder durch
 sich selbst teilbar ist.
 """
 
-userInput = input("Zahl: ")
+userInput: str = input("Zahl: ")
 
 number: int = int(userInput)
 
