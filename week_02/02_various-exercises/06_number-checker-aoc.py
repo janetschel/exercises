@@ -15,6 +15,8 @@ Other than the range rule, the following are true:
 How many different passwords within the range given in your puzzle input meet these criteria?
 
 Input: 356261, 846303
+
+Ergebnis: 544
 """
 
 
