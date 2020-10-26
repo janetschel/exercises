@@ -3,9 +3,9 @@ Bei der ersten Teilaufgabe haben wir nun also berechnet, wie viel Treibstoff jed
 Allerdings haben wir hierbei etwas Wichtiges vergessen: Treibstoff wiegt selber auch etwas.
 
 Das heißt auf gut Deutsch:
-Die Masse von Treibstoff braucht auch wieder Treibstoff, dieser Treibstoff braucht auch wiederrum Treib-
-stoff, und so weiter. Die Rechnung, um den benötigten Treibstoff von Treibstoff zu berechnen, ist genau die Gleiche, als wenn ich
-den Treibstoffbedarf eines Moduls ausrechne: durch 3 dividieren, abrunden, und 2 abziehen.
+Die Masse von Treibstoff braucht auch wieder Treibstoff, dieser Treibstoff braucht auch wiederrum Treibstoff, und so weiter.
+Die Rechnung, um den benötigten Treibstoff von Treibstoff zu berechnen, ist genau die Gleiche, als wenn ich den Treibstoffbedarf
+eines Moduls ausrechne: durch 3 dividieren, abrunden, und 2 abziehen.
 Jede Masse, welche negativen Treibstoffbedarf hätte, wird betrachetet, als hätte es keinen (0) Treibstoffbedarf.
 
 Das heißt: für jedes Modul muss zunächst die benötigte Treibstoffmenge berechnet und zum Gesamtergebnis addiert werden. Danach muss
@@ -62,5 +62,5 @@ def calculateNeededFuel(listOfModuleMasses: [int]) -> int:
     return neededFuel
 
 
-requiredFuel = calculateNeededFuel([100756])
+requiredFuel = calculateNeededFuel(moduleMasses)
 print(requiredFuel)
