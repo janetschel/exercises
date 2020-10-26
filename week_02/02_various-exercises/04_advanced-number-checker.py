@@ -1,5 +1,5 @@
 """
-Benutzt eure Funktion aus der Lösung der vorherigen Aufgabe (02_number-checker.py) um diese Aufgabe zu lösen.
+Benutzt eure Funktion aus der Lösung der vorherigen Aufgabe (03_number-checker.py) um diese Aufgabe zu lösen.
 
 Aufgabe:
 Wie viele valide Zahlen gibt es zwischen 111111 und 999999 (inklusive)?
@@ -13,7 +13,7 @@ Hinweis: die durchschnittliche Execution-Time der Musterlösung pro Durchlauf (g
 # Lösung
 # (Anzahl valider Nummern: 2919)
 
-# Funktion aus 02_number-checker.py. Diese Funktion kann leider nicht importiert werden, da die file-namings zu Syntax-Errors führen
+# Funktion aus 03_number-checker.py. Diese Funktion kann leider nicht importiert werden, da die file-namings zu Syntax-Errors führen
 def checkNumber(inputNumber: str) -> bool:
     hasDoubleDigits: bool = False
     numberOfDigits: int = 1
