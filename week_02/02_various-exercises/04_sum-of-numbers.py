@@ -2,6 +2,11 @@
 Schreibt eine Funktion, welche die Zahlen zwischen 0 und einer eingegebenen Zahl (inklusive) addiert, und das Ergebnis zurückgibt.
 Benutzt zur Lösung dieser Aufgabe eine der beiden Schleifentypen.
 
+Beispiele:
+- Die eingegebene Nummer vom User ist 5: 0 + 1 + 2 + 3 + 4 + 5 = 15
+- Die eingegebene Nummber vom User ist 10: 0 + 1 + 2 +... + 8 + 9 + 10 = 55
+- Bei 1000 is das Ergebnis 500500
+
 Hinweis: achtet bei dieser Aufgabe auf Type-Hintings
 
 Zusatzaufgabe:
