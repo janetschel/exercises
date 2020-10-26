@@ -9,6 +9,7 @@ Given this additional criterion, but still ignoring the range rule, the followin
 How many different passwords within the range given in your puzzle input meet all of the criteria?
 """
 
+
 def check_valid_number_of_equals(str_to_count):
     for x in range(10):
         number_of_occurences = 0
