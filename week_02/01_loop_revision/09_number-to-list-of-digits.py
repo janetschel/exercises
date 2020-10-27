@@ -1,6 +1,6 @@
 """
 Schreibt eine Funktion, welche eine Nummer in eine Liste bestehend aus den
-einzelnen Ziffern besteht.
+einzelnen Ziffern umwandelt.
 
 Beispiel:
 123 -> [1, 2, 3]
