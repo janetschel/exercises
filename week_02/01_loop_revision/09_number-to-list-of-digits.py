@@ -11,14 +11,14 @@ from typing import List
 
 
 def numberToDigits(number: int) -> List[int]:
-    result: List[int] = []
+    digits: List[int] = []
     numberString: str = str(number)
 
     for character in numberString:
         digit: int = int(character)
-        result.append(digit)
+        digits.append(digit)
 
-    return result
+    return digits
 
 
 print(numberToDigits(123)) # [1, 2, 3]
