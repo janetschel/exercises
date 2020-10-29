@@ -8,16 +8,16 @@ Beispiel:
 """
 
 
-def sumOfDigits(number: int) -> int:
+def calculateSumOfDigits(number: int) -> int:
     numberString: str = str(number)
-    result: int = 0
+    sumOfDigits: int = 0
 
     for character in numberString:
         digit: int = int(character)
-        result += digit
+        sumOfDigits += digit
 
-    return result
+    return sumOfDigits
 
 
-print(sumOfDigits(123))  # 6
-print(sumOfDigits(1337))  # 14
+print(calculateSumOfDigits(123))  # 6
+print(calculateSumOfDigits(1337))  # 14
