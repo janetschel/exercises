@@ -9,13 +9,25 @@ calculateSecretKey("banane", "VUHUHY") -> 20
 
 """
 
+def decrypt(string: str, key: int) -> str:
+    decryptedString: str = ""
+    for character in string.lower():
+        charValue = ord(character)
+        decryptedCharacterValue = (charValue - key)
+        if decryptedCharacterValue < 97:
+            decryptedCharacterValue += 26
+        decryptedCharacter = chr(decryptedCharacterValue)
+        decryptedString += decryptedCharacter
+
+    return decryptedString.upper()
+
 
 def calculateSecretKey(plainText: str, cipherText: str) -> int:
-    secretKey: int = -1
+    for key in range(1, 27):
+        decryptedWord = decrypt(cipherText, key)
 
-    # TODO: implement
-
-    return secretKey
+        if decryptedWord == plainText.upper():
+            return key
 
 
 print(calculateSecretKey("banane", "EDQDQH"))  # 3
